@@ -39,7 +39,7 @@ const ContactSection = () => {
                   {item.text}
                 </a>
               ) : (
-                <p className="font-body text-sm text-muted-foreground">{item.text}</p>
+                <p className="font-body text-sm text-muted-foreground break-all">{item.text}</p>
               )}
             </motion.div>
           ))}
