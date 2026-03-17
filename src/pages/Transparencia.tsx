@@ -171,6 +171,75 @@ const Transparencia = () => {
               </div>
             </div>
           </Section>
+
+          <Section icon={Handshake} title="TERMO DE FOMENTO — A RUA É NOSSA">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                ["Nº do Termo de Fomento", "982525/2025"],
+                ["Emenda", "nº 50060001"],
+                ["Autora da Emenda", "Deputada Rogéria Santos"],
+                ["Valor Total da Parceria", "R$ 196.000,00"],
+                ["Valor Recursos Humanos", "R$ 135.720,00"],
+                ["Concedente", "Ministério do Esporte – MESP (CNPJ: 02.961.362/0001-74)"],
+                ["Convenente", "Associação Amigos da Juventude (CNPJ: 32.568.526/0001-69)"],
+                ["Data de Assinatura", "17/12/2025"],
+                ["Vigência", "17/12/2025 a 17/02/2027"],
+                ["Objeto", "Implementação e desenvolvimento do projeto A Rua é Nossa no município de Eunápolis/BA"],
+                ["Situação da Prestação de Contas", "Em execução"],
+                ["Prestação de Contas Prevista", "18/05/2027"],
+              ].map(([label, value]) => (
+                <div key={label} className="bg-muted rounded-xl p-4">
+                  <div className="font-body text-xs uppercase tracking-wider text-muted-foreground mb-1">{label}</div>
+                  <div className="font-body text-sm font-semibold text-foreground">{value}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-4">
+              <h3 className="font-display text-xl text-foreground mb-3">DOCUMENTOS</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a
+                  href="/docs/Termo_de_Fomento_982525_2025_ADJ.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-muted rounded-xl p-4 hover:bg-primary/10 transition-colors"
+                >
+                  <Download className="w-5 h-5 text-primary shrink-0" />
+                  <div>
+                    <div className="font-body text-sm font-semibold text-foreground">Termo de Fomento nº 982525/2025</div>
+                    <div className="font-body text-xs text-muted-foreground">Documento completo</div>
+                  </div>
+                </a>
+                <a
+                  href="/docs/DOU_ASSOCIACAO_AMIGOS_DA_JUVENTUDE_ADJ.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-muted rounded-xl p-4 hover:bg-primary/10 transition-colors"
+                >
+                  <Download className="w-5 h-5 text-primary shrink-0" />
+                  <div>
+                    <div className="font-body text-sm font-semibold text-foreground">Publicação no DOU</div>
+                    <div className="font-body text-xs text-muted-foreground">Diário Oficial da União</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </Section>
+
+          <Section icon={FileText} title="CONSULTA — INSTRUMENTOS ASSINADOS">
+            <div className="space-y-4">
+              <img
+                src="/images/propostas-aprovadas.jpeg"
+                alt="Propostas apresentadas e instrumentos assinados da ADJ"
+                className="w-full rounded-xl border border-border"
+              />
+              <img
+                src="/images/instrumentos-assinados.jpeg"
+                alt="Lista de instrumentos assinados — Termos de Fomento da ADJ"
+                className="w-full rounded-xl border border-border"
+              />
+            </div>
+          </Section>
         </div>
       </section>
 
