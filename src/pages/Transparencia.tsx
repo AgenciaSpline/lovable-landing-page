@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { FileText, Users, Target, Building, Calendar } from "lucide-react";
+import { FileText, Users, Target, Building, Calendar, Handshake, Download } from "lucide-react";
 
 const Section = ({ icon: Icon, title, children }: { icon: any; title: string; children: React.ReactNode }) => (
   <motion.div
