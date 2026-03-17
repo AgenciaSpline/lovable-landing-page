@@ -117,6 +117,60 @@ const Transparencia = () => {
               colaboração de voluntários e parcerias para manter seus projetos em funcionamento.
             </p>
           </Section>
+
+          <Section icon={Handshake} title="TERMO DE FOMENTO — JOGANDO PARA VENCER">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                ["Nº do Termo de Fomento", "976316/2025"],
+                ["Emenda", "nº 44700007"],
+                ["Autora da Emenda", "Deputada Rogéria Santos"],
+                ["Valor Total da Parceria", "R$ 196.000,00"],
+                ["Valor Recursos Humanos", "R$ 159.200,00"],
+                ["Concedente", "Ministério do Esporte – MESP (CNPJ: 02.961.362/0001-74)"],
+                ["Convenente", "Associação Amigos da Juventude (CNPJ: 32.568.526/0001-69)"],
+                ["Data de Assinatura", "30/10/2025"],
+                ["Vigência", "30/10/2025 a 30/12/2026"],
+                ["Objeto", "Implementação e Desenvolvimento do Projeto Jogando para Vencer, em Eunápolis/BA"],
+                ["Situação da Prestação de Contas", "Em execução"],
+                ["Prestação de Contas Prevista", "30/03/2027"],
+              ].map(([label, value]) => (
+                <div key={label} className="bg-muted rounded-xl p-4">
+                  <div className="font-body text-xs uppercase tracking-wider text-muted-foreground mb-1">{label}</div>
+                  <div className="font-body text-sm font-semibold text-foreground">{value}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-4">
+              <h3 className="font-display text-xl text-foreground mb-3">EDITAIS</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a
+                  href="/docs/EDITAL_01_2026_RH_JOGANDO_PARA_VENCER_ADJ.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-muted rounded-xl p-4 hover:bg-primary/10 transition-colors"
+                >
+                  <Download className="w-5 h-5 text-primary shrink-0" />
+                  <div>
+                    <div className="font-body text-sm font-semibold text-foreground">Edital nº 01/2026 — RH</div>
+                    <div className="font-body text-xs text-muted-foreground">Recursos Humanos</div>
+                  </div>
+                </a>
+                <a
+                  href="/docs/EDITAL_02_2026_MATERIAIS_SERVICOS_JOGANDO_PARA_VENCER_ADJ.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-muted rounded-xl p-4 hover:bg-primary/10 transition-colors"
+                >
+                  <Download className="w-5 h-5 text-primary shrink-0" />
+                  <div>
+                    <div className="font-body text-sm font-semibold text-foreground">Edital nº 02/2026 — Materiais e Serviços</div>
+                    <div className="font-body text-xs text-muted-foreground">Materiais e Serviços</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </Section>
         </div>
       </section>
 
