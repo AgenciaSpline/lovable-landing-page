@@ -211,14 +211,14 @@ const Transparencia = () => {
                   </div>
                 </a>
                 <a
-                  href="/docs/EDITAL_02_2025_MATERIAIS_SERVICOS_A_RUA_E_NOSSA_ADJ.pdf"
+                  href="/docs/EDITAL_02_2026_MATERIAIS_SERVICOS_A_RUA_E_NOSSA_ADJ.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 bg-muted rounded-xl p-4 hover:bg-primary/10 transition-colors"
                 >
                   <Download className="w-5 h-5 text-primary shrink-0" />
                   <div>
-                    <div className="font-body text-sm font-semibold text-foreground">Edital nº 02/2025 — Materiais e Serviços</div>
+                    <div className="font-body text-sm font-semibold text-foreground">Edital nº 02/2026 — Materiais e Serviços</div>
                     <div className="font-body text-xs text-muted-foreground">Materiais e Serviços</div>
                   </div>
                 </a>
